@@ -1,6 +1,9 @@
 .userEmail {
   color: white;
+  margin-left: 1.5rem;
   margin-right: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 0.9rem;
 }
 
