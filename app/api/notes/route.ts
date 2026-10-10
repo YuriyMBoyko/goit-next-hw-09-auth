@@ -4,8 +4,6 @@ import { cookies } from 'next/headers';
 import { isAxiosError } from 'axios';
 import { logErrorResponse } from '../_utils/utils';
 
-const PER_PAGE = 12;
-
 export async function GET(request: NextRequest) {
   try {
     const cookieStore = await cookies();
@@ -18,7 +16,7 @@ export async function GET(request: NextRequest) {
       params: {
         ...(search !== '' && { search }),
         page,
-        perPage: PER_PAGE,
+        perPage: 12,
         ...(tag && { tag }),
       },
       headers: {
